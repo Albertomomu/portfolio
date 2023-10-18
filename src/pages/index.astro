@@ -1,0 +1,26 @@
+---
+import Header from "@components/Header.astro";
+import Layout from "@layouts/Layout.astro";
+---
+
+<Layout title="Alberto Moreno">
+  <Header />
+  <main>
+    <div class="intro"></div>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  .intro {
+    //background-image: url("../../public/backgrounds/intro.svg");
+    //background-repeat: no-repeat;
+    background-size: cover;
+  }
+</style>

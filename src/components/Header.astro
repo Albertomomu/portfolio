@@ -1,0 +1,76 @@
+---
+
+---
+
+<header class="grid grid-cols-1 md:grid-cols-3 mt-12">
+  <div></div>
+  <nav class="flex justify-center">
+    <ul
+      class="w-96 text-white flex justify-between items-center [background-color:#950de3] py-1 rounded-full"
+    >
+      <li data-position="0" class="py-2 px-7 cursor-pointer">Work</li>
+      <li data-position="1" class="py-2 px-7 cursor-pointer text">About me</li>
+      <li data-position="2" class="py-2 px-7 cursor-pointer">Contact</li>
+      <span class="py-2 px-7"></span>
+    </ul>
+  </nav>
+  <div></div>
+</header>
+
+<script>
+  const menu = document.getElementsByTagName("li");
+  const span = document.querySelector("ul span") as HTMLElement;
+  const ul = document.querySelector("ul");
+  Array.from(menu).forEach((el) => {
+    el.addEventListener("click", () => {
+      // Remove the selected class from all elements
+      Array.from(menu).forEach((item) => {
+        item.classList.remove("selected");
+      });
+      const index = parseInt(el.getAttribute("data-position"));
+
+      if (index === 0) {
+        span.style.left = "5px";
+      } else if (index === 1) {
+        span.style.left = "137px";
+      } else if (index === 2) {
+        span.style.left = "285px";
+      }
+    });
+  });
+</script>
+
+<style>
+  ul {
+    position: relative;
+  }
+
+  ul li {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+  }
+
+  ul span {
+    position: absolute;
+    top: 1;
+    left: 5px;
+    width: 90px;
+    height: 40px;
+    background-color: #e1abff;
+    border-radius: 9999px;
+    transition: 0.5s;
+  }
+
+  ul li:nth-child(1) ~ span {
+    left: 5px;
+  }
+
+  ul li:nth-child(2) ~ span {
+    left: 137px;
+  }
+
+  ul li:nth-child(3) ~ span {
+    left: 285px;
+  }
+</style>

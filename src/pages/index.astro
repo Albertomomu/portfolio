@@ -1,7 +1,51 @@
 ---
+import Badge from "../components/Badge.astro";
+import SocialPill from "../components/SocialPill.astro";
+import LinkedinIcon from "../components/icons/Linkedin.astro";
+import GithubIcon from "../components/icons/Github.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Portfolio">
-  <main></main>
+  <main>
+    <section class="w-full lg:w-[740px] mx-auto py-44">
+      <img
+        class="rounded-full w-12 h-12 mb-4"
+        src="../../public/images/logo.png"
+        alt="Alberto photo"
+      />
+      <h1 class="text-white text-5xl font-bold flex gap-x-4 pb-4">
+        Hey, im Alberto <a
+          href="https://www.linkedin.com/in/alberto-moreno-murillo/"
+          target="_blank"
+          rel="noopener"
+          class="flex items-center"
+        >
+          <Badge>Available for work</Badge>
+        </a>
+      </h1>
+      <h2 class="text-2xl text-wrap">
+        <span>+2 years of experience.</span><span class="text-yellow-200/90"
+        ></span>
+        Web and Mobile Developer.
+      </h2>
+      <span class="text-red-200/90"> From Valencia, Spain 🇪🇸.</span><span
+        class="opacity-80"
+      >
+        Im specially interested in javascript frameworks. Currently learning
+        Astro and React.</span
+      >
+      <nav class="flex gap-x-2 mt-10">
+        <SocialPill href="https://www.linkedin.com/in/alberto-moreno-murillo/">
+          <LinkedinIcon class="w-6 h-6" />
+          Linkedin
+        </SocialPill>
+
+        <SocialPill href="https://github.com/Albertomomu">
+          <GithubIcon class="w-6 h-6" />
+          Github
+        </SocialPill>
+      </nav>
+    </section>
+  </main>
 </Layout>

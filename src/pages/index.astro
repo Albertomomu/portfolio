@@ -5,6 +5,8 @@ import LinkedinIcon from "../components/icons/Linkedin.astro";
 import GithubIcon from "../components/icons/Github.astro";
 import MailIcon from "../components/icons/Mail.astro";
 import Layout from "../layouts/Layout.astro";
+import Experience from "../components/Experience.astro";
+import Container from "../components/Container.astro";
 ---
 
 <Layout
@@ -12,7 +14,7 @@ import Layout from "../layouts/Layout.astro";
   description="Programador web con más de 2 años de experiencia con Wordpress y Angular/Ionic. Especialista en soluciones totalmente adaptadas a tus necesidades"
 >
   <main>
-    <section class="w-full lg:w-[740px] mx-auto py-44">
+    <Container>
       <img
         class="rounded-full size-12 mb-4"
         src="../../public/images/logo.png"
@@ -53,6 +55,12 @@ import Layout from "../layouts/Layout.astro";
           alberto.moreno2357@gmail.com
         </SocialPill>
       </nav>
-    </section>
+    </Container>
+    <Container>
+      <h1 class="text-white text-5xl font-bold flex gap-x-4 pb-8">
+        Experience
+      </h1>
+      <Experience />
+    </Container>
   </main>
 </Layout>

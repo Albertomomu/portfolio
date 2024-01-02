@@ -1,0 +1,36 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCE = [
+  {
+    date: "June 2022 - Now",
+    title: "CocoGlobalMedia",
+    description:
+      "Experienced programmer specializing in WordPress web development, hosting management (domains, backups, email), and crafting cross-platform apps using Ionic and Angular. From elegant websites to robust hosting solutions and mobile applications, I bring a comprehensive skill set to meet diverse digital needs.",
+    link: "https://cocoglobalmedia.com",
+  },
+  {
+    date: "September 2021 - April 2022",
+    title: "DAM",
+    description:
+      "Graduated from the Higher Technician in Multiplatform Application Development, equipped with skills to develop, implement, and maintain secure and user-friendly cross-platform software.",
+    link: "",
+  },
+  {
+    date: "September 2019 - April 2021",
+    title: "DAW",
+    description:
+      "Completed Web App Development, mastering skills in Systems, Databases, and Programming. Proficient in designing and implementing web applications. Specialized in logical reasoning and adaptable problem-solving.",
+    link: "",
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>

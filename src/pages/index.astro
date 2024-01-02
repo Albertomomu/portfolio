@@ -7,6 +7,7 @@ import MailIcon from "../components/icons/Mail.astro";
 import Layout from "../layouts/Layout.astro";
 import Experience from "../components/Experience.astro";
 import Container from "../components/Container.astro";
+import Briefcase from "../components/icons/Briefcase.astro";
 ---
 
 <Layout
@@ -14,7 +15,7 @@ import Container from "../components/Container.astro";
   description="Programador web con más de 2 años de experiencia con Wordpress y Angular/Ionic. Especialista en soluciones totalmente adaptadas a tus necesidades"
 >
   <main>
-    <Container>
+    <Container class="pt-44 pb-24">
       <img
         class="rounded-full size-12 mb-4"
         src="../../public/images/logo.png"
@@ -31,9 +32,9 @@ import Container from "../components/Container.astro";
         </a>
       </h1>
       <h2 class="text-2xl text-wrap">
-        <span>+2 years of experience.</span><span class="text-yellow-200/90"
-        ></span>
-        Web and Mobile Developer.
+        <span>+2 years of experience.</span><span class="text-yellow-200">
+          Web and Mobile Developer.</span
+        >
       </h2>
       <span class="text-red-200/90"> From Valencia, Spain 🇪🇸.</span><span
         class="opacity-80"
@@ -56,11 +57,14 @@ import Container from "../components/Container.astro";
         </SocialPill>
       </nav>
     </Container>
-    <Container>
-      <h1 class="text-white text-5xl font-bold flex gap-x-4 pb-8">
-        Experience
-      </h1>
-      <Experience />
-    </Container>
   </main>
+  <Container id="experience">
+    <h2
+      class="text-white text-2xl font-semibold mb-6 flex gap-x-3 items-center"
+    >
+      <Briefcase class="size-7" />
+      Experience
+    </h2>
+    <Experience />
+  </Container>
 </Layout>

@@ -8,6 +8,8 @@ import Layout from "../layouts/Layout.astro";
 import Experience from "../components/Experience.astro";
 import Container from "../components/Container.astro";
 import Briefcase from "../components/icons/Briefcase.astro";
+import Code from "../components/icons/Code.astro";
+import Projects from "../components/Projects.astro";
 ---
 
 <Layout
@@ -15,13 +17,15 @@ import Briefcase from "../components/icons/Briefcase.astro";
   description="Programador web con más de 2 años de experiencia con Wordpress y Angular/Ionic. Especialista en soluciones totalmente adaptadas a tus necesidades"
 >
   <main>
-    <Container class="pt-44 pb-24">
+    <Container class="pt-24 lg:pt-44 pb-24">
       <img
         class="rounded-full size-12 mb-4"
         src="../../public/images/logo.png"
         alt="Alberto photo"
       />
-      <h1 class="text-white text-5xl font-bold flex gap-x-4 pb-4">
+      <h1
+        class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex gap-x-4 pb-4"
+      >
         Hey, im Alberto <a
           href="https://www.linkedin.com/in/alberto-moreno-murillo/"
           target="_blank"
@@ -42,29 +46,38 @@ import Briefcase from "../components/icons/Briefcase.astro";
         Im specially interested in javascript frameworks. Currently learning
         Astro and React.</span
       >
-      <nav class="flex gap-x-4 mt-8">
+      <nav class="flex flex-wrap gap-y-4 gap-x-4 mt-8">
         <SocialPill href="https://www.linkedin.com/in/alberto-moreno-murillo/">
-          <LinkedinIcon class="size-6" />
+          <LinkedinIcon class="size-5 md:size-6" />
           Linkedin
         </SocialPill>
         <SocialPill href="https://github.com/Albertomomu">
-          <GithubIcon class="size-6" />
+          <GithubIcon class="size-5 md:size-6" />
           Github
         </SocialPill>
-        <SocialPill href="https://github.com/Albertomomu">
-          <MailIcon class="size-6" />
+        <SocialPill href="mailto:alberto.moreno2357@gmail.com">
+          <MailIcon class="size-5 md:size-6" />
           alberto.moreno2357@gmail.com
         </SocialPill>
       </nav>
     </Container>
+    <Container id="experience">
+      <h2
+        class="text-white text-2xl font-semibold mb-6 flex gap-x-3 items-center"
+      >
+        <Briefcase class="size-7" />
+        Experience
+      </h2>
+      <Experience />
+    </Container>
+    <Container id="projects">
+      <h2
+        class="text-white text-2xl font-semibold mb-6 flex gap-x-3 items-center"
+      >
+        <Code class="size-7" />
+        Projects
+      </h2>
+      <Projects />
+    </Container>
   </main>
-  <Container id="experience">
-    <h2
-      class="text-white text-2xl font-semibold mb-6 flex gap-x-3 items-center"
-    >
-      <Briefcase class="size-7" />
-      Experience
-    </h2>
-    <Experience />
-  </Container>
 </Layout>

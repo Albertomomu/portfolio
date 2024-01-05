@@ -12,6 +12,7 @@ import Code from "../components/icons/Code.astro";
 import Projects from "../components/Projects.astro";
 import Footer from "../components/Footer.astro";
 import Contact from "../components/Contact.astro";
+import About from "../components/About.astro";
 ---
 
 <Layout
@@ -19,7 +20,7 @@ import Contact from "../components/Contact.astro";
   description="Programador web con más de 2 años de experiencia con Wordpress y Angular/Ionic. Especialista en soluciones totalmente adaptadas a tus necesidades"
 >
   <main>
-    <Container class="pt-24 lg:pt-44 pb-24">
+    <Container id="about" class="pt-24 lg:pt-44 pb-24">
       <img
         class="rounded-full size-12 mb-4"
         src="../../public/images/logo.png"
@@ -42,11 +43,12 @@ import Contact from "../components/Contact.astro";
           Web and Mobile Developer.</span
         >
       </h2>
-      <span class="text-red-200/90"> From Valencia, Spain 🇪🇸.</span><span
-        class="opacity-80"
-      >
-        Im specially interested in javascript frameworks. Currently learning
-        Astro and React.</span
+      <span class="text-red-200/90 text-pretty">
+        From Valencia, Spain 🇪🇸.</span
+      ><span class="opacity-80">
+        Higher Technician in Web Application Development and Web Application
+        Development with demonstrable experience. I have a strong interest in
+        Javascript, currently learning React framework.</span
       >
       <nav class="flex flex-wrap gap-y-4 gap-x-4 mt-8">
         <SocialPill href="https://www.linkedin.com/in/alberto-moreno-murillo/">

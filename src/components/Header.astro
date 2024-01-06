@@ -1,18 +1,22 @@
 ---
 import { getRelativeLocaleUrl } from "astro:i18n";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
 import English from "./icons/English.astro";
 import Spain from "./icons/Spain.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <header
   class="flex justify-center items-center py-8 w-full xl:w-[1120px] mx-auto"
 >
   <nav class="flex gap-x-4 lg:gap-x-10 opacity-80 text-white">
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-    {/* <a href={getRelativeLocaleUrl("es")}><Spain class="size-5" /></a> */}
-    {/* <a href={getRelativeLocaleUrl("en")}><English class="size-5" /></a> */}
+    <a href="#about">{t("nav.about")}</a>
+    <a href="#experience">{t("nav.experience")}</a>
+    <a href="#projects">{t("nav.projects")}</a>
+    <a href="#contact">{t("nav.contact")}</a>
+    <a href={getRelativeLocaleUrl("es")}><Spain class="size-5" /></a>
+    <a href={getRelativeLocaleUrl("en")}><English class="size-5" /></a>
   </nav>
 </header>

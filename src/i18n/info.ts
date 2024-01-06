@@ -74,7 +74,8 @@ export const text = {
     'contact.email': 'Tu correo',
     'contact.phone': 'Tu teléfono',
     'contact.message': 'Tu mensaje',
-    'contact.send': 'Enviar mensaje'
+    'contact.send': 'Enviar mensaje',
+    'footer.rights': 'Todos los derechos reservados'
   },
   en: {
     'nav.about': 'About',
@@ -122,6 +123,7 @@ export const text = {
     'contact.email': 'Your email',
     'contact.phone': 'Your phone',
     'contact.message': 'Your message',
-    'contact.send': "Send message"
+    'contact.send': "Send message",
+    'footer.rights': "All rights reserved."
   },
 } as const;

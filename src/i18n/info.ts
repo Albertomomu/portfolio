@@ -1,6 +1,28 @@
+import Css from "../components/icons/Css.astro";
+import Html from "../components/icons/Html.astro";
+import React from "../components/icons/React.astro";
+
 export const languages = {
   en: 'English',
   fr: 'Français',
+};
+
+const TAGS = {
+  HTML: {
+    name: "HTML",
+    class: "bg-black text-white",
+    icon: Html,
+  },
+  CSS: {
+    name: "CSS",
+    class: "bg-black text-white",
+    icon: Css,
+  },
+  REACT: {
+    name: "React",
+    class: "bg-black text-white",
+    icon: React,
+  },
 };
 
 export const defaultLang = 'es';
@@ -33,7 +55,26 @@ export const text = {
           "Completó el Desarrollo de Aplicaciones Web, dominando habilidades en Sistemas, Bases de Datos y Programación. Experto en el diseño e implementación de aplicaciones web. Especializado en razonamiento lógico y resolución de problemas adaptable.",
         link: "",
       },
-    ]
+    ],
+    'PROJECTS': [
+      {
+        title: "TIC TAC TOE",
+        description: "Un juego clásico de Tic Tac Toe implementado usando React.",
+        link: "https://tic-tac-toe-lake-gamma.vercel.app/",
+        github: "https://github.com/Albertomomu/tic-tac-toe",
+        image: "images/projects/tiktaktoe.webp",
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.REACT],
+      },
+    ],
+    'contact.contact': 'Contacta conmigo',
+    'contact.touch': 'Ponte en contacto conmigo',
+    'contact.text': 'Si estás interesado en discutir posibles colaboraciones, oportunidades laborales o tienes alguna consulta, no dudes en ponerte en contacto conmigo utilizando la información de contacto proporcionada.',
+    'contact.see': 'Ver perfil',
+    'contact.name': 'Tu nombre',
+    'contact.email': 'Tu correo',
+    'contact.phone': 'Tu teléfono',
+    'contact.message': 'Tu mensaje',
+    'contact.send': 'Enviar mensaje'
   },
   en: {
     'nav.about': 'About',
@@ -62,6 +103,25 @@ export const text = {
           "Completed Web App Development, mastering skills in Systems, Databases, and Programming. Proficient in designing and implementing web applications. Specialized in logical reasoning and adaptable problem-solving.",
         link: "",
       },
-    ]
+    ],
+    'PROJECTS': [
+      {
+        title: "TIC TAC TOE",
+        description: "A classic game of Tic Tac Toe implemented using React.",
+        link: "https://tic-tac-toe-lake-gamma.vercel.app/",
+        github: "https://github.com/Albertomomu/tic-tac-toe",
+        image: "images/projects/tiktaktoe.webp",
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.REACT],
+      },
+    ],
+    'contact.contact': 'Contact me',
+    'contact.touch': 'Get in touch with me',
+    'contact.text': 'If you are interested in discussing potential collaborations, job opportunities, or have any inquiries, feel free to reach out to me using the provided contact information.',
+    'contact.see': 'See profile',
+    'contact.name': 'Your name',
+    'contact.email': 'Your email',
+    'contact.phone': 'Your phone',
+    'contact.message': 'Your message',
+    'contact.send': "Send message"
   },
 } as const;

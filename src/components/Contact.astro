@@ -1,6 +1,9 @@
 ---
 import Github from "./icons/Github.astro";
 import Linkedin from "./icons/Linkedin.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <div class="container mx-auto mb-24">
@@ -10,17 +13,15 @@ import Linkedin from "./icons/Linkedin.astro";
         <span
           class="block mb-4 text-base font-semibold text-primary text-yellow-200/80"
         >
-          Contact me
+          {t("contact.contact")}
         </span>
         <h2
           class="text-white mb-6 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]"
         >
-          GET IN TOUCH WITH ME
+          {t("contact.touch")}
         </h2>
         <p class="text-base text-pretty leading-relaxed text-white mb-16">
-          If you are interested in discussing potential collaborations, job
-          opportunities, or have any inquiries, feel free to reach out to me
-          using the provided contact information.
+          {t("contact.text")}
         </p>
         <div class="mb-8 flex w-full max-w-[370px]">
           <div
@@ -31,7 +32,9 @@ import Linkedin from "./icons/Linkedin.astro";
           <div class="w-full">
             <h4 class="mb-1 text-xl font-bold text-white">Github</h4>
             <p class="text-base text-body-color text-yellow-200/80">
-              <a href="https://github.com/Albertomomu">See profile &#8594</a>
+              <a href="https://github.com/Albertomomu"
+                >{t("contact.see")} &#8594</a
+              >
             </p>
           </div>
         </div>
@@ -45,7 +48,7 @@ import Linkedin from "./icons/Linkedin.astro";
             <h4 class="mb-1 text-xl font-bold text-white">Linkedin</h4>
             <p class="text-base text-body-color text-yellow-200/80">
               <a href="https://www.linkedin.com/in/alberto-moreno-murillo/"
-                >See profile &#8594</a
+                >{t("contact.see")} &#8594</a
               >
             </p>
           </div>
@@ -60,7 +63,7 @@ import Linkedin from "./icons/Linkedin.astro";
             <input
               type="text"
               name="name"
-              placeholder="Your Name"
+              placeholder={t("contact.name")}
               class="border-stroke border-dark-3 bg-black/50 text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
             />
           </div>
@@ -68,7 +71,7 @@ import Linkedin from "./icons/Linkedin.astro";
             <input
               type="email"
               name="email"
-              placeholder="Your Email"
+              placeholder={t("contact.email")}
               class="border-stroke dark:border-dark-3 text-dark-6 bg-black/50 text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
             />
           </div>
@@ -76,7 +79,7 @@ import Linkedin from "./icons/Linkedin.astro";
             <input
               type="text"
               name="phone"
-              placeholder="Your Phone"
+              placeholder={t("contact.phone")}
               class="border-stroke dark:border-dark-3 dark:text-dark-6 bg-black/50 text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
             />
           </div>
@@ -84,7 +87,7 @@ import Linkedin from "./icons/Linkedin.astro";
             <textarea
               rows="6"
               name="message"
-              placeholder="Your Message"
+              placeholder={t("contact.message")}
               class="border-stroke dark:border-dark-3 dark:text-dark-6 bg-black/50 text-body-color focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none"
             ></textarea>
           </div>
@@ -93,7 +96,7 @@ import Linkedin from "./icons/Linkedin.astro";
               type="submit"
               class="w-full p-3 text-white transition border rounded border-primary bg-primary hover:bg-opacity-90"
             >
-              Send Message
+              {t("contact.send")}
             </button>
           </div>
         </form>

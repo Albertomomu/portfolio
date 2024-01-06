@@ -1,7 +1,7 @@
 ---
 import { getRelativeLocaleUrl } from "astro:i18n";
-import English from "./icons/English.astro";
-import Spain from "./icons/Spain.astro";
+import English from "../icons/English.astro";
+import Spain from "../icons/Spain.astro";
 ---
 
 <header
@@ -12,7 +12,7 @@ import Spain from "./icons/Spain.astro";
     <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
-    {/* <a href={getRelativeLocaleUrl("es")}><Spain class="size-5" /></a> */}
-    {/* <a href={getRelativeLocaleUrl("en")}><English class="size-5" /></a> */}
+    <a href={getRelativeLocaleUrl("es")}><Spain class="size-5" /></a>
+    <a href={getRelativeLocaleUrl("en")}><English class="size-5" /></a>
   </nav>
 </header>

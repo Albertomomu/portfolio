@@ -27,7 +27,7 @@ const TAGS = {
 
 export const defaultLang = 'es';
 
-export const text = {
+export const text: any = {
   es: {
     'nav.about': 'Sobre mi',
     'nav.experience': 'Experiencia',

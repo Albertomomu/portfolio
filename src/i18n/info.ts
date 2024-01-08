@@ -62,7 +62,7 @@ export const text: any = {
         description: "Un juego clásico de Tic Tac Toe implementado usando React.",
         link: "https://tic-tac-toe-lake-gamma.vercel.app/",
         github: "https://github.com/Albertomomu/tic-tac-toe",
-        image: "images/projects/tiktaktoe.webp",
+        image: "https://albertomoreno.dev/images/projects/tiktaktoe.webp",
         tags: [TAGS.HTML, TAGS.CSS, TAGS.REACT],
       },
     ],

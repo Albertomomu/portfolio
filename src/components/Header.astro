@@ -9,14 +9,16 @@ const t = useTranslations(lang);
 ---
 
 <header
-  class="flex justify-center items-center py-8 w-full xl:w-[1120px] mx-auto"
+  class="flex flex-wrap justify-center items-center py-8 w-full xl:w-[1120px] mx-auto"
 >
-  <nav class="flex gap-x-4 lg:gap-x-10 opacity-80 text-white">
+  <nav class="flex flex-wrap gap-x-4 lg:gap-x-10 opacity-80 text-white">
     <a href="#about">{t("nav.about")}</a>
     <a href="#experience">{t("nav.experience")}</a>
     <a href="#projects">{t("nav.projects")}</a>
     <a href="#contact">{t("nav.contact")}</a>
-    <a href={getRelativeLocaleUrl("es")}><Spain class="size-5" /></a>
-    <a href={getRelativeLocaleUrl("en")}><English class="size-5" /></a>
+    <div class="flex flex-wrap gap-x-4 lg:gap-x-10">
+      <a href={getRelativeLocaleUrl("es")}><Spain class="size-5" /></a>
+      <a href={getRelativeLocaleUrl("en")}><English class="size-5" /></a>
+    </div>
   </nav>
 </header>

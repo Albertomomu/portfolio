@@ -20,6 +20,8 @@ const TAGS = {
   },
 };
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
+import Github from "./icons/Github.astro";
+import Web from "./icons/Web.astro";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const PROJECTS: any = t("PROJECTS");
@@ -47,6 +49,18 @@ const PROJECTS: any = t("PROJECTS");
         src={image}
         alt={`Screenshot of the project ${title}`}
       />
+      <a href={github} target="_blank">
+        <div class="flex items-center gap-x-2 mt-8 hover:text-yellow-200/90 transition">
+          <Github class="size-5" />
+          View project repository &#8594
+        </div>
+      </a>
+      <a href={link} target="_blank">
+        <div class="flex items-center gap-x-2 mt-5 hover:text-yellow-200/90 transition">
+          <Web class="size-5" />
+          Visit project website &#8594
+        </div>
+      </a>
     </article>
   ))
 }

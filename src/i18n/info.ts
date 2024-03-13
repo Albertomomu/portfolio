@@ -1,6 +1,7 @@
 import Css from "../components/icons/Css.astro";
 import Html from "../components/icons/Html.astro";
 import React from "../components/icons/React.astro";
+import Flutter from "../components/icons/Flutter.astro";
 
 export const languages = {
   en: 'English',
@@ -22,6 +23,11 @@ const TAGS = {
     name: "React",
     class: "bg-black text-white",
     icon: React,
+  },
+  FLUTTER: {
+    name: "Flutter",
+    class: "bg-black text-white",
+    icon: Flutter,
   },
 };
 
@@ -58,6 +64,22 @@ export const text: any = {
     ],
     'PROJECTS': [
       {
+        title: "INFORMACIÓN NFT APP",
+        description: "Web hecha con React para publicitar aplicación sobre NFT creada con React Native.",
+        link: "https://nft-web-chi.vercel.app/",
+        github: "https://github.com/Albertomomu/nft-showcase",
+        image: "images/projects/nft-showcase.png",
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.REACT],
+      },
+      {
+        title: "APLICACIÓN FITNESS",
+        description: "Aplicación realizada con Flutter para llevar un control de ejercicios y dietas.",
+        link: "",
+        github: "https://github.com/Albertomomu/fitness",
+        image: "images/projects/fitness.jpg",
+        tags: [TAGS.FLUTTER],
+      },
+      {
         title: "TRES EN RAYA",
         description: "Un juego clásico de Tic Tac Toe implementado usando React.",
         link: "https://tic-tac-toe-lake-gamma.vercel.app/",
@@ -72,18 +94,10 @@ export const text: any = {
         github: "https://github.com/Albertomomu/movies-app",
         image: "images/projects/film-searcher.jpg",
         tags: [TAGS.HTML, TAGS.CSS, TAGS.REACT],
-      },
-      {
-        title: "INFORMACIÓN NFT APP",
-        description: "Web hecha con React para publicitar aplicación sobre NFT creada con React Native.",
-        link: "https://nft-web-chi.vercel.app/",
-        github: "https://github.com/Albertomomu/nft-showcase",
-        image: "images/projects/nft-showcase.png",
-        tags: [TAGS.HTML, TAGS.CSS, TAGS.REACT],
-      },
+      }
     ],
     'project.github': 'Ver repositorio de Github',
-    'project.website': 'Visitar pagina web',
+    'project.website': 'Visitar página web',
     'contact.contact': 'Contacta conmigo',
     'contact.touch': 'Ponte en contacto conmigo',
     'contact.text': 'Si estás interesado en discutir posibles colaboraciones, oportunidades laborales o tienes alguna consulta, no dudes en ponerte en contacto conmigo utilizando la información de contacto proporcionada.',
@@ -125,6 +139,22 @@ export const text: any = {
     ],
     'PROJECTS': [
       {
+        title: "NFT SHOWCASE",
+        description: "Web made with React to promote an application about NFT created with React Native.",
+        link: "https://nft-web-chi.vercel.app/",
+        github: "https://github.com/Albertomomu/nft-showcase",
+        image: "images/projects/nft-showcase.png",
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.REACT],
+      },
+      {
+        title: "FITNESS APPLICATION",
+        description: "Application created with Flutter to track exercises and diets.",
+        link: "",
+        github: "https://github.com/Albertomomu/fitness",
+        image: "images/projects/fitness.jpg",
+        tags: [TAGS.FLUTTER],
+      },
+      {
         title: "TIC TAC TOE",
         description: "A classic game of Tic Tac Toe implemented using React.",
         link: "https://tic-tac-toe-lake-gamma.vercel.app/",
@@ -139,15 +169,7 @@ export const text: any = {
         github: "https://github.com/Albertomomu/movies-app",
         image: "images/projects/film-searcher.jpg",
         tags: [TAGS.HTML, TAGS.CSS, TAGS.REACT],
-      },
-      {
-        title: "NFT SHOWCASE",
-        description: "Web made with React to promote an application about NFT created with React Native.",
-        link: "https://nft-web-chi.vercel.app/",
-        github: "https://github.com/Albertomomu/nft-showcase",
-        image: "images/projects/nft-showcase.png",
-        tags: [TAGS.HTML, TAGS.CSS, TAGS.REACT],
-      },
+      }
     ],
     'project.github': 'View project repository',
     'project.website': 'Visit project website',

@@ -141,7 +141,7 @@ export const text: any = {
         tags: [TAGS.HTML, TAGS.CSS, TAGS.REACT],
       },
       {
-        title: "NFT APP INFORMATION",
+        title: "NFT SHOWCASE",
         description: "Web made with React to promote an application about NFT created with React Native.",
         link: "https://nft-web-chi.vercel.app/",
         github: "https://github.com/Albertomomu/nft-showcase",

@@ -64,6 +64,14 @@ export const text: any = {
     ],
     'PROJECTS': [
       {
+        title: "CLON NETFLIX",
+        description: "Un clon de la web de Netflix hecho con React.",
+        link: "#",
+        github: "https://github.com/Albertomomu/Netflix-clone",
+        image: "images/projects/netflix-clone.jpg",
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.REACT],
+      },
+      {
         title: "INFORMACIÓN NFT APP",
         description: "Web hecha con React para publicitar aplicación sobre NFT creada con React Native.",
         link: "https://nft-web-chi.vercel.app/",
@@ -138,6 +146,14 @@ export const text: any = {
       },
     ],
     'PROJECTS': [
+      {
+        title: "NETFLIX CLONE",
+        description: "A Netflix Clone made with React.",
+        link: "#",
+        github: "https://github.com/Albertomomu/Netflix-clone",
+        image: "images/projects/netflix-clone.jpg",
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.REACT],
+      },
       {
         title: "NFT SHOWCASE",
         description: "Web made with React to promote an application about NFT created with React Native.",

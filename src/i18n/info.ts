@@ -41,7 +41,13 @@ export const text: any = {
     'nav.contact': 'Contacto',
     'EXPERIENCE': [
       {
-        date: "Junio 2022 - Actualidad",
+        date: "Abril 2024 - Actualidad",
+        title: "Quickgold - Programador",
+        description: "Desarrollo y mantengo ERP para gestión interna con PHP, jQuery, HTML y CSS (framework propio basado en Symfony), páginas web con Next.js y aplicaciones móviles con React Native. También administro VPS y servidores Node, y gestiono bases de datos relacionales usando SQL.",
+        link: "https://quickgold.es",
+      },
+      {
+        date: "Junio 2022 - Abril 2024",
         title: "CocoGlobalMedia - Programador",
         description:
           "Programador experimentado especializado en desarrollo web con WordPress, gestión de alojamiento (dominios, copias de seguridad, correo electrónico) y creación de aplicaciones multiplataforma utilizando Ionic y Angular. Desde sitios web elegantes hasta soluciones de alojamiento robustas y aplicaciones móviles, aporto un conjunto completo de habilidades para satisfacer diversas necesidades digitales.",
@@ -124,7 +130,13 @@ export const text: any = {
     'nav.contact': 'Contact',
     'EXPERIENCE': [
       {
-        date: "June 2022 - Now",
+        date: "April 2024 - Now",
+        title: "Quickgold - Programador",
+        description: "I develop and maintain ERP for internal management using PHP, jQuery, HTML, and CSS (custom framework based on Symfony), websites with Next.js, and mobile applications with React Native. I also manage VPS and Node servers, and handle relational databases using SQL.",
+        link: "https://quickgold.es",
+      },
+      {
+        date: "June 2022 - April 2024",
         title: "CocoGlobalMedia - Programmer",
         description:
           "Experienced programmer specializing in WordPress web development, hosting management (domains, backups, email), and crafting cross-platform apps using Ionic and Angular. From elegant websites to robust hosting solutions and mobile applications, I bring a comprehensive skill set to meet diverse digital needs.",

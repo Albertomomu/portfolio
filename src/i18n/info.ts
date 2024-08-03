@@ -131,7 +131,7 @@ export const text: any = {
     'EXPERIENCE': [
       {
         date: "April 2024 - Now",
-        title: "Quickgold - Programador",
+        title: "Quickgold - Programmer",
         description: "I develop and maintain ERP for internal management using PHP, jQuery, HTML, and CSS (custom framework based on Symfony), websites with Next.js, and mobile applications with React Native. I also manage VPS and Node servers, and handle relational databases using SQL.",
         link: "https://quickgold.es",
       },

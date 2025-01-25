@@ -70,6 +70,30 @@ export const text: any = {
     ],
     'PROJECTS': [
       {
+        title: "BOOKWISE",
+        description: "Infraestructura SaaS para la gestión de reservas.",
+        link: "#",
+        github: "#",
+        image: "images/projects/bookwiseproject.png",
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.REACT],
+      },
+      {
+        title: "JARVIS",
+        description: "Agencia de marketing digital",
+        link: "https://jarvis-bice.vercel.app/",
+        github: "https://github.com/Albertomomu/jarvis",
+        image: "images/projects/jarvis.png",
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.REACT],
+      },
+      {
+        title: "ALA INTERPRETING",
+        description: "Servicios de interpretación.",
+        link: "https://alainterpreting.com/",
+        github: "#",
+        image: "images/projects/alainterpreting.png",
+        tags: [TAGS.HTML, TAGS.CSS],
+      },
+      {
         title: "CLON NETFLIX",
         description: "Un clon de la web de Netflix hecho con React.",
         link: "#",
@@ -158,6 +182,30 @@ export const text: any = {
       },
     ],
     'PROJECTS': [
+      {
+        title: "BOOKWISE",
+        description: "Saas Infrastucture for Reservation Management.",
+        link: "#",
+        github: "#",
+        image: "images/projects/bookwiseproject.png",
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.REACT],
+      },
+      {
+        title: "JARVIS",
+        description: "Digital marketing agency",
+        link: "https://jarvis-bice.vercel.app/",
+        github: "https://github.com/Albertomomu/jarvis",
+        image: "images/projects/jarvis.png",
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.REACT],
+      },
+      {
+        title: "ALA INTERPRETING",
+        description: "Interpreting services.",
+        link: "https://alainterpreting.com/",
+        github: "#",
+        image: "images/projects/alainterpreting.png",
+        tags: [TAGS.HTML, TAGS.CSS],
+      },
       {
         title: "NETFLIX CLONE",
         description: "A Netflix Clone made with React.",

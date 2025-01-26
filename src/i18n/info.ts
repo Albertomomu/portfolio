@@ -2,6 +2,8 @@ import Css from "../components/icons/Css.astro";
 import Html from "../components/icons/Html.astro";
 import React from "../components/icons/React.astro";
 import Flutter from "../components/icons/Flutter.astro";
+import Wordpress from "../components/icons/Wordpress.astro";
+import Next from "../components/icons/Next.astro";
 
 export const languages = {
   en: 'English',
@@ -28,6 +30,16 @@ const TAGS = {
     name: "Flutter",
     class: "bg-black text-white",
     icon: Flutter,
+  },
+  WORDPRESS: {  
+    name: "Wordpress",
+    class: "bg-black text-white",
+    icon: Wordpress,
+  },
+  NEXT: {
+    name: "Next.js",
+    class: "bg-black text-white",
+    icon: Next,
   },
 };
 
@@ -75,7 +87,7 @@ export const text: any = {
         link: "#",
         github: "#",
         image: "images/projects/bookwiseproject.png",
-        tags: [TAGS.HTML, TAGS.CSS, TAGS.REACT],
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.NEXT],
       },
       {
         title: "JARVIS",
@@ -83,7 +95,7 @@ export const text: any = {
         link: "https://jarvis-bice.vercel.app/",
         github: "https://github.com/Albertomomu/jarvis",
         image: "images/projects/jarvis.png",
-        tags: [TAGS.HTML, TAGS.CSS, TAGS.REACT],
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.NEXT],
       },
       {
         title: "ALA INTERPRETING",
@@ -91,7 +103,7 @@ export const text: any = {
         link: "https://alainterpreting.com/",
         github: "#",
         image: "images/projects/alainterpreting.png",
-        tags: [TAGS.HTML, TAGS.CSS],
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.WORDPRESS],
       },
       {
         title: "CLON NETFLIX",
@@ -188,7 +200,7 @@ export const text: any = {
         link: "#",
         github: "#",
         image: "images/projects/bookwiseproject.png",
-        tags: [TAGS.HTML, TAGS.CSS, TAGS.REACT],
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.NEXT],
       },
       {
         title: "JARVIS",
@@ -196,7 +208,7 @@ export const text: any = {
         link: "https://jarvis-bice.vercel.app/",
         github: "https://github.com/Albertomomu/jarvis",
         image: "images/projects/jarvis.png",
-        tags: [TAGS.HTML, TAGS.CSS, TAGS.REACT],
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.NEXT],
       },
       {
         title: "ALA INTERPRETING",
@@ -204,7 +216,7 @@ export const text: any = {
         link: "https://alainterpreting.com/",
         github: "#",
         image: "images/projects/alainterpreting.png",
-        tags: [TAGS.HTML, TAGS.CSS],
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.WORDPRESS],
       },
       {
         title: "NETFLIX CLONE",

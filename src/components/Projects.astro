@@ -49,13 +49,15 @@ const PROJECTS: any = t("PROJECTS");
         src={image}
         alt={`Screenshot of the project ${title}`}
       />
-      <a href={github} target="_blank">
-        <div class="flex items-center gap-x-2 mt-8 text-white hover:text-yellow-200/90 transition">
-          <Github class="size-5" />
-          {t("project.github")} &#8594
-        </div>
-      </a>
-      {link && (
+      { github != "#" && (
+        <a href={github} target="_blank">
+          <div class="flex items-center gap-x-2 mt-8 text-white hover:text-yellow-200/90 transition">
+            <Github class="size-5" />
+            {t("project.github")} &#8594
+          </div>
+        </a>
+      )}
+      {link != "#" && (
         <a href={link} target="_blank">
           <div class="flex items-center gap-x-2 mt-5 text-white hover:text-yellow-200/90 transition">
             <Web class="size-5" />

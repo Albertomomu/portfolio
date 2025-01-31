@@ -147,6 +147,7 @@ export const text: any = {
       }
     ],
     'project.github': 'Ver repositorio de Github',
+    'project.learnMore': 'Saber más',
     'project.website': 'Visitar página web',
     'contact.contact': 'Contacta conmigo',
     'contact.touch': 'Ponte en contacto conmigo',
@@ -260,6 +261,7 @@ export const text: any = {
       }
     ],
     'project.github': 'View project repository',
+    'project.learnMore': 'Learn more',
     'project.website': 'Visit project website',
     'contact.contact': 'Contact me',
     'contact.touch': 'Get in touch with me',

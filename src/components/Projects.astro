@@ -49,21 +49,32 @@ const PROJECTS: any = t("PROJECTS");
         src={image}
         alt={`Screenshot of the project ${title}`}
       />
-      { github != "#" && (
+      
+      {github !== "#" && (
         <a href={github} target="_blank">
           <div class="flex items-center gap-x-2 mt-8 text-white hover:text-yellow-200/90 transition">
             <Github class="size-5" />
-            {t("project.github")} &#8594
+            {t("project.github")} &#8594;
           </div>
         </a>
       )}
-      {link != "#" && (
+
+      {link !== "#" && (
         <a href={link} target="_blank">
           <div class="flex items-center gap-x-2 mt-5 text-white hover:text-yellow-200/90 transition">
             <Web class="size-5" />
-            {t("project.website")} &#8594
+            {t("project.website")} &#8594;
           </div>
         </a>
+      )}
+
+      {github === "#" && link === "#" && (
+        <div class="flex items-center gap-x-2 mt-6 text-white bg-yellow-500/10 border border-yellow-200 rounded-full px-4 py-2 w-fit">
+          <svg xmlns="http://www.w3.org/2000/svg" class="size-5 text-yellow-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" />
+          </svg>
+          <span class="text-sm font-medium">{t("project.inProgress")}</span>
+        </div>
       )}
     </article>
   ))

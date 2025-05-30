@@ -22,13 +22,14 @@ const TAGS = {
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
 import Github from "./icons/Github.astro";
 import Web from "./icons/Web.astro";
+import Figma from "./icons/Figma.astro";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const PROJECTS: any = t("PROJECTS");
 ---
 
 {
-  PROJECTS.map(({ title, description, link, github, image, tags }: any) => (
+  PROJECTS.map(({ title, description, link, github, design, image, tags }: any) => (
     <article class="mb-24">
       <h3 class="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
       <p class="text-lg mb-4 text-white text-pretty">{description}</p>
@@ -75,6 +76,15 @@ const PROJECTS: any = t("PROJECTS");
           </svg>
           <span class="text-sm font-medium">{t("project.inProgress")}</span>
         </div>
+      )}
+
+      {design !== "#" && (
+        <a href={design} target="_blank">
+          <div class="flex items-center gap-x-2 mt-5 text-white hover:text-pink-400/90 transition">
+            <Figma class="size-5" />
+            {t("project.design")} &#8594;
+          </div>
+        </a>
       )}
     </article>
   ))

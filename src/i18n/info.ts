@@ -64,6 +64,12 @@ export const text: any = {
         link: "https://quickgold.es",
       },
       {
+        date: "2024",
+        title: "eJPTv2 - INE (Certificación)",
+        description: "Certificación de pentesting junior que valida habilidades en reconocimiento, enumeración, explotación básica y reporte de vulnerabilidades en entornos controlados.",
+        link: "https://certs.ine.com/32310f32-3d8b-48aa-a658-023144cf1627#acc.EPuISdOG",
+      },
+      {
         date: "Junio 2022 - Abril 2024",
         title: "CocoGlobalMedia - Programador",
         description:
@@ -89,7 +95,7 @@ export const text: any = {
       {
         title: "BOOKWISE",
         description: "Infraestructura SaaS para la gestión de reservas.",
-        link: "#",
+        link: "https://bookwiseplatform.com/",
         github: "#",
         design: "https://www.figma.com/design/fZ6WdOeu7qrzh2uhcBBmTU/BookWise?node-id=0-1&t=XLBLMGr8aGeZp5e6-1",
         image: "images/projects/bookwiseproject.png",
@@ -179,6 +185,12 @@ export const text: any = {
         link: "https://quickgold.es",
       },
       {
+        date: "2024",
+        title: "eJPTv2 - INE (Certification)",
+        description: "Junior penetration testing certification validating skills in reconnaissance, enumeration, basic exploitation, and vulnerability reporting in controlled environments.",
+        link: "https://certs.ine.com/32310f32-3d8b-48aa-a658-023144cf1627#acc.EPuISdOG",
+      },
+      {
         date: "June 2022 - April 2024",
         title: "CocoGlobalMedia - Programmer",
         description:
@@ -204,7 +216,7 @@ export const text: any = {
       {
         title: "BOOKWISE",
         description: "SaaS infrastructure for booking management.",
-        link: "#",
+        link: "https://bookwiseplatform.com/",
         github: "#",
         design: "https://www.figma.com/design/fZ6WdOeu7qrzh2uhcBBmTU/BookWise?node-id=0-1&t=XLBLMGr8aGeZp5e6-1",
         image: "images/projects/bookwiseproject.png",

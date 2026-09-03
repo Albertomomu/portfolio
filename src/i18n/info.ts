@@ -58,7 +58,13 @@ export const text: any = {
     'nav.contact': 'Contacto',
     'EXPERIENCE': [
       {
-        date: "Abril 2024 - Actualidad",
+        date: "Abril 2026 - Actualidad",
+        title: "Ploot.ai - Programador",
+        description: "Desarrollo de funcionalidades en una plataforma SaaS de inteligencia artificial para automatización de contenido en LinkedIn. Trabajo en el desarrollo de interfaces modernas, integración con APIs externas, agentes de IA conversacionales y dashboards de métricas y analítica.",
+        link: "https://ploot.ai",
+      },
+      {
+        date: "Abril 2024 - Abril 2026",
         title: "Quickgold - Programador",
         description: "Desarrollo y mantengo ERP para gestión interna con PHP, jQuery, HTML y CSS (framework propio basado en Symfony), páginas web con Next.js y aplicaciones móviles con React Native. También administro VPS y servidores Node, y gestiono bases de datos relacionales usando SQL.",
         link: "https://quickgold.es",
@@ -92,6 +98,15 @@ export const text: any = {
       },
     ],
     'PROJECTS': [
+      {
+        title: "ROAMIO",
+        description: "App móvil para organizar viajes en grupo de forma inteligente. Coordina disponibilidad, detecta puentes festivos por comunidad autónoma, cruza preferencias del grupo y conecta con vuelos, alojamiento y actividades.",
+        link: "https://roamio.es",
+        github: "#",
+        design: "#",
+        image: "images/projects/roamio.png",
+        tags: [TAGS.NEXT, TAGS.REACT_NATIVE],
+      },
       {
         title: "BOOKWISE",
         description: "Infraestructura SaaS para la gestión de reservas.",
@@ -179,7 +194,13 @@ export const text: any = {
     'nav.contact': 'Contact',
     'EXPERIENCE': [
       {
-        date: "April 2024 - Now",
+        date: "April 2026 - Present",
+        title: "Ploot.ai - Programmer",
+        description: "Building features for an AI SaaS platform that automates LinkedIn content creation. Working on modern interfaces, external API integrations, conversational AI agents, and analytics dashboards.",
+        link: "https://ploot.ai",
+      },
+      {
+        date: "April 2024 - April 2026",
         title: "Quickgold - Programmer",
         description: "I develop and maintain ERP for internal management using PHP, jQuery, HTML, and CSS (custom framework based on Symfony), websites with Next.js, and mobile applications with React Native. I also manage VPS and Node servers, and handle relational databases using SQL.",
         link: "https://quickgold.es",
@@ -213,6 +234,15 @@ export const text: any = {
       },
     ],
     'PROJECTS': [
+      {
+        title: "ROAMIO",
+        description: "Mobile app for smart group travel planning. Coordinates availability, detects public holidays by Spanish region, matches group preferences, and connects with flights, accommodation, and activities.",
+        link: "https://roamio.es",
+        github: "#",
+        design: "#",
+        image: "images/projects/roamio.png",
+        tags: [TAGS.NEXT, TAGS.REACT_NATIVE],
+      },
       {
         title: "BOOKWISE",
         description: "SaaS infrastructure for booking management.",

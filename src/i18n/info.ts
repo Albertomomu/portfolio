@@ -58,9 +58,15 @@ export const text: any = {
     'nav.contact': 'Contacto',
     'EXPERIENCE': [
       {
-        date: "Abril 2026 - Actualidad",
+        date: "Septiembre 2026 - Actualidad",
+        title: "Vigía Studio - Fundador",
+        description: "Mi estudio de desarrollo: webs, apps móviles, software a medida y revisiones de seguridad web para empresas y negocios.",
+        link: "https://vigiastudio.com",
+      },
+      {
+        date: "Abril 2026 - Septiembre 2026",
         title: "Ploot.ai - Programador",
-        description: "Desarrollo de funcionalidades en una plataforma SaaS de inteligencia artificial para automatización de contenido en LinkedIn. Trabajo en el desarrollo de interfaces modernas, integración con APIs externas, agentes de IA conversacionales y dashboards de métricas y analítica.",
+        description: "Desarrollo de funcionalidades en una plataforma SaaS de inteligencia artificial para automatización de contenido en LinkedIn. Trabajé en el desarrollo de interfaces modernas, integración con APIs externas, agentes de IA conversacionales y dashboards de métricas y analítica.",
         link: "https://ploot.ai",
       },
       {
@@ -70,7 +76,7 @@ export const text: any = {
         link: "https://quickgold.es",
       },
       {
-        date: "2024",
+        date: "Julio 2025",
         title: "eJPTv2 - INE (Certificación)",
         description: "Certificación de pentesting junior que valida habilidades en reconocimiento, enumeración, explotación básica y reporte de vulnerabilidades en entornos controlados.",
         link: "https://certs.ine.com/32310f32-3d8b-48aa-a658-023144cf1627#acc.EPuISdOG",
@@ -194,9 +200,15 @@ export const text: any = {
     'nav.contact': 'Contact',
     'EXPERIENCE': [
       {
-        date: "April 2026 - Present",
+        date: "September 2026 - Present",
+        title: "Vigía Studio - Founder",
+        description: "My development studio: websites, mobile apps, custom software and web security reviews for companies and businesses.",
+        link: "https://vigiastudio.com",
+      },
+      {
+        date: "April 2026 - September 2026",
         title: "Ploot.ai - Programmer",
-        description: "Building features for an AI SaaS platform that automates LinkedIn content creation. Working on modern interfaces, external API integrations, conversational AI agents, and analytics dashboards.",
+        description: "Built features for an AI SaaS platform that automates LinkedIn content creation. Worked on modern interfaces, external API integrations, conversational AI agents, and analytics dashboards.",
         link: "https://ploot.ai",
       },
       {
@@ -206,7 +218,7 @@ export const text: any = {
         link: "https://quickgold.es",
       },
       {
-        date: "2024",
+        date: "July 2025",
         title: "eJPTv2 - INE (Certification)",
         description: "Junior penetration testing certification validating skills in reconnaissance, enumeration, basic exploitation, and vulnerability reporting in controlled environments.",
         link: "https://certs.ine.com/32310f32-3d8b-48aa-a658-023144cf1627#acc.EPuISdOG",

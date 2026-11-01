@@ -4,6 +4,7 @@ import React from "../components/icons/React.astro";
 import Flutter from "../components/icons/Flutter.astro";
 import Wordpress from "../components/icons/Wordpress.astro";
 import Next from "../components/icons/Next.astro";
+import Code from "../components/icons/Code.astro";
 
 export const languages = {
   en: 'English',
@@ -45,6 +46,11 @@ const TAGS = {
     name: "React Native",
     class: "bg-black text-white",
     icon: React,
+  },
+  ASTRO: {
+    name: "Astro",
+    class: "bg-black text-white",
+    icon: Code,
   },
 };
 
@@ -98,6 +104,24 @@ export const text: any = {
       },
     ],
     'PROJECTS': [
+      {
+        title: "SPOONIES",
+        description: "Web de lanzamiento de Spoonies, una app para la ansiedad y los ataques de pánico. En español e inglés, con venta del plan Founding mediante Stripe y una página para empresas.",
+        link: "https://spooniesapp.com",
+        github: "#",
+        design: "#",
+        image: "images/projects/spoonies.webp",
+        tags: [TAGS.ASTRO, TAGS.HTML, TAGS.CSS],
+      },
+      {
+        title: "SIVALGLASS",
+        description: "Web corporativa de Sivalglass, empresa de transformación e instalación de vidrio plano en la Comunidad Valenciana. Tema propio sobre WordPress y Elementor, con servicios, proyectos y formulario de presupuesto.",
+        link: "https://sivalglass.com",
+        github: "#",
+        design: "#",
+        image: "images/projects/sivalglass.webp",
+        tags: [TAGS.WORDPRESS, TAGS.HTML, TAGS.CSS],
+      },
       {
         title: "ROAMIO",
         description: "App móvil para organizar viajes en grupo de forma inteligente. Coordina disponibilidad, detecta puentes festivos por comunidad autónoma, cruza preferencias del grupo y conecta con vuelos, alojamiento y actividades.",
@@ -234,6 +258,24 @@ export const text: any = {
       },
     ],
     'PROJECTS': [
+      {
+        title: "SPOONIES",
+        description: "Launch website for Spoonies, an app for anxiety and panic attacks. In Spanish and English, selling the Founding plan through Stripe and with a page for companies.",
+        link: "https://spooniesapp.com",
+        github: "#",
+        design: "#",
+        image: "images/projects/spoonies.webp",
+        tags: [TAGS.ASTRO, TAGS.HTML, TAGS.CSS],
+      },
+      {
+        title: "SIVALGLASS",
+        description: "Corporate website for Sivalglass, a flat glass processing and installation company in the Valencia region. Custom WordPress and Elementor theme, with services, projects and a quote request form.",
+        link: "https://sivalglass.com",
+        github: "#",
+        design: "#",
+        image: "images/projects/sivalglass.webp",
+        tags: [TAGS.WORDPRESS, TAGS.HTML, TAGS.CSS],
+      },
       {
         title: "ROAMIO",
         description: "Mobile app for smart group travel planning. Coordinates availability, detects public holidays by Spanish region, matches group preferences, and connects with flights, accommodation, and activities.",

@@ -1,6 +1,7 @@
 ---
 import Header from "../components/Header.astro";
 import "@fontsource-variable/onest";
+import { getLangFromUrl } from "../i18n/utils";
 
 interface Props {
   title: string;
@@ -8,10 +9,18 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
+
+// Español en la raíz e inglés en /en/: cada página apunta a sí misma como canónica y a la otra
+// como alternativa, para que los buscadores no las tomen por duplicados.
+const lang = getLangFromUrl(Astro.url);
+const sitio = Astro.site ?? new URL("https://albertomoreno.dev");
+const urlEs = new URL("/", sitio).href;
+const urlEn = new URL("/en/", sitio).href;
+const canonical = lang === "en" ? urlEn : urlEs;
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
@@ -19,6 +28,15 @@ const { title, description } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="es" href={urlEs} />
+    <link rel="alternate" hreflang="en" href={urlEn} />
+    <link rel="alternate" hreflang="x-default" href={urlEs} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={lang === "en" ? "en_US" : "es_ES"} />
   </head>
   <body>
     <div
